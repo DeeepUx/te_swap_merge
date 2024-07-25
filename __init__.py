@@ -1,4 +1,3 @@
-# __init__.py
 from modules import script_callbacks
 
 def on_ui_tabs():
