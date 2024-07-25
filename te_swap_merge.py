@@ -1,9 +1,9 @@
-# te_swap_merge.py
 import gradio as gr
 
 def on_ui_tabs():
     print("Setting up the UI tab for TE Swap & Merge...")
     with gr.Blocks() as demo:
+        print("Creating Gradio Blocks...")
         with gr.Row():
             gr.Markdown("# TE Swap & Merge Extension")
             fine_tuned_model_path = gr.Textbox(label="Fine-Tuned Model Path")
@@ -21,6 +21,7 @@ def on_ui_tabs():
         swap_button.click(lambda x: "Swap button clicked", inputs=[], outputs=[swap_result])
         merge_button.click(lambda x: "Merge button clicked", inputs=[], outputs=[merge_result])
 
+    print("UI setup complete.")
     return ("TE Swap & Merge", demo, "te_swap_merge")
 
 if __name__ == "__main__":
