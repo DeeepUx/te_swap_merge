@@ -62,4 +62,5 @@ def on_ui_tabs():
     return ("TE Swap & Merge", demo, "te_swap_merge")
 
 if __name__ == "__main__":
+    print("Launching TE Swap & Merge extension...")
     on_ui_tabs().launch()
